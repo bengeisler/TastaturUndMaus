@@ -23,6 +23,9 @@ namespace TastaturUndMaus
 
 			if (e.KeyCode == Keys.Enter)
 			{
+				// Eingabeton unterdrücken
+				e.SuppressKeyPress = true;
+
 				//lblAusgabe.Text = txtEingabe.Text;
 				btnAusgabe_Click(sender, e);
 			}
